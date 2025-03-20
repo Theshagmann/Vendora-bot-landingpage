@@ -5,7 +5,7 @@ import YoutubeEmbed from './YoutubeEmbed';
 
 const AboutPage = () => {
   return (
-    <div className="bg-gradient-to-l ">
+    <div className="bg-gradient-to-l " id='about'>
       {/* Hero Section */}
       <motion.section 
         className="container relative mx-2 sm:mx-7 inset-2 rounded-3xl bg-gradient-to-t from-[var(--white)]/30 to-[var(--secondary)]/30 text-white py-10 sm:py-20 px-4 sm:px-15"
@@ -189,6 +189,7 @@ const AboutPage = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.95, delay: 0.5 }}
         viewport={{ once: true }}
+        id='how-to'
       >
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -210,6 +211,7 @@ const AboutPage = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.95, delay: 0.5 }}
         viewport={{ once: true }}
+        id='pricing'
       >
         <div className=" mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-black via-black to-[var(--primary)] leading-tight italic mb-2">Pricing</h2>

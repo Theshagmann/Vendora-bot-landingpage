@@ -49,7 +49,7 @@ const FAQContactPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-l min-h-screen">
+    <div className="bg-gradient-to-l min-h-screen" id='faqs'>
       {/* Header */}
       <header className="">
         <div className="container mx-auto px-4 py-8">
@@ -98,7 +98,7 @@ const FAQContactPage = () => {
 
           {/* Contact Form */}
           <motion.div 
-            className="bg-white p-2 rounded-3xl shadow-lg bg-gradient-to-b from-[var(--white)]/10 to-[var(--white)]/5 "
+            className="bg-white py-2 px-8 rounded-3xl shadow-lg bg-gradient-to-b from-[var(--white)]/10 to-[var(--white)]/5 "
             initial={{ y: -10, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.75, delay: 0.7 }}
@@ -148,7 +148,7 @@ const FAQContactPage = () => {
               </div>
               <button 
                 type="submit"
-                className="bg-[var(--primary)]/70 text-white  py-2 mx-5 my-3 px-4 rounded-2xl hover:[var(--primary)]/20 transition duration-300"
+                className="bg-[var(--primary)]/70 text-white  py-2 my-3 px-4 rounded-2xl hover:[var(--primary)]/20 transition duration-300"
               >
                 Send Message
               </button>

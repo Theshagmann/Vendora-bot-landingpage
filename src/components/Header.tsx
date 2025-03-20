@@ -27,7 +27,7 @@ const Header = () => {
       </h1>
       <nav className="space-x-6">
         <motion.a href="#about" className="hover:text-[var(--white)] rounded-lg px-2 py-1" whileHover={{ scale: 1.1 }}>About</motion.a>
-        <motion.a href="#how to" className="hover:text-[var(--white)] rounded-lg px-2 py-1" whileHover={{ scale: 1.1 }}>How To</motion.a>
+        <motion.a href="#how-to" className="hover:text-[var(--white)] rounded-lg px-2 py-1" whileHover={{ scale: 1.1 }}>How To</motion.a>
         <motion.a href="#pricing" className="hover:text-[var(--white)] rounded-lg px-2 py-1" whileHover={{ scale: 1.1 }}>Pricing</motion.a>
         <motion.a href="#faqs" className="hover:text-[var(--white)] rounded-lg px-2 py-1" whileHover={{ scale: 1.1 }}>FAQs</motion.a>
       </nav>
