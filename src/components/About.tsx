@@ -8,7 +8,7 @@ const AboutPage = () => {
     <div className="bg-gradient-to-l " id='about'>
       {/* Hero Section */}
       <motion.section 
-        className="container relative mx-2 sm:mx-7 inset-2 rounded-3xl bg-gradient-to-t from-[var(--white)]/30 to-[var(--secondary)]/30 text-white py-10 sm:py-20 px-4 sm:px-15"
+        className="container relative inset-2 rounded-3xl bg-gradient-to-t from-[var(--white)]/30 to-[var(--secondary)]/30 text-white py-10 sm:py-20 px-4 sm:px-15"
         initial={{ y: -10, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.95, delay: 0.5 }}
@@ -144,7 +144,7 @@ const AboutPage = () => {
                   ),
                   backContent: (
                     <div className="flex flex-col h-full justify-between">
-                      <p className="text-gray-700 font-medium mb-4">Connect with successful vendors, share experiences, and learn best practices. Access exclusive webinars and training materials.</p>
+                      <p className="text-gray-700 font-medium mb-4">Connect with successful vendors, share experiences, learn best practices and Promote your business to potential customers. Access exclusive webinars and training materials.</p>
                       <a href="#" className="text-purple-500 font-medium hover:text-purple-600 flex items-center gap-2 mt-auto">
                         Join Community
                         <span className="text-lg">→</span>
@@ -213,22 +213,22 @@ const AboutPage = () => {
         viewport={{ once: true }}
         id='pricing'
       >
-        <div className=" mx-auto px-6">
+        <div className=" mx-auto px-6 flex flex-col justify-center items-center">
           <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-black via-black to-[var(--primary)] leading-tight italic mb-2">Pricing</h2>
           <p className='text-gray-600 max-w-lg mx-auto text-center font-bold text-lg mb-10 '>Forever Free. Upgrade for NO transaction fees, analytics and other exclusive features.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
             <motion.div 
-              className="h-130 w-100 mx-51 flex flex-col gap-4 bg-gray-50 shadow-lg rounded-2xl p-8 hover:shadow-2xl bg-gradient-to-t from-[var(--primary)]/20 to-[var(--white)]/50"
+              className="h-130 w-100 flex flex-col gap-4 bg-gray-50 shadow-lg rounded-2xl p-8 hover:shadow-2xl bg-gradient-to-t from-[var(--primary)]/20 to-[var(--white)]/50"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.95, delay: 0.7 }}
               viewport={{ once: true }}
             >
-              <p className='text-xl font-semibold mb-3'>Free</p>
+              <p className='text-xl font-semibold mb-3 flex'>Free</p>
               <div className="flex mx-auto">
-                <p className=" text-xl font-semibold ">$</p>
-                <p className=" text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-black via-black/60 to-[var(--primary)]/40 leading-tight italic ">0.00</p>
-                <p className="text-xl font-semibold py-8">/mo</p>
+                <p className=" text-2xl font-semibold py-1 ">₦</p>
+                <p className=" text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-black via-black/60 to-[var(--primary)]/40 leading-tight italic ">0</p>
+                <p className="text-xl font-semibold py-1">/mo</p>
               </div>
               <div className='text-left'>
                 <p className=" text-xl font-semibold mx-auto ">Perfect for beginners</p>
@@ -237,6 +237,7 @@ const AboutPage = () => {
                 <p className='text-xl font-semibold mx-auto '>• Order Management </p>
                 <p className='text-xl w-full text-sm font-semibold mx-auto '>• 4% commission on any transaction</p>
                 <p className='text-xl font-semibold mx-auto '>• Unlimited sales </p>
+                <p className='text-xl font-semibold mx-auto '>• Limited Categories </p>
               </div>
               <button className='my-18 flex bg-gradient-to-tl from-[var(--primary)]/50 to-[var(--white)]/45 text-[var(--text)] mx-auto px-13 py-3 rounded-3xl hover:bg-[var(--primary)]/20 italic font-medium'>Choose plan</button>
             </motion.div>
@@ -247,11 +248,11 @@ const AboutPage = () => {
               transition={{ duration: 0.95, delay: 0.9 }}
               viewport={{ once: true }}
             >
-              <p className='text-xl font-semibold mb-3'>Premium</p>
+              <p className='text-xl font-semibold mb-3'>Pro</p>
               <div className="flex mx-auto">
-                <p className=" text-xl font-semibold ">$</p>
-                <p className=" text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-black via-black/60 to-[var(--primary)]/40 leading-tight italic ">2.99</p>
-                <p className="text-xl font-semibold py-8">/mo</p>
+                <p className=" text-2xl font-semibold py-1 ">₦</p>
+                <p className=" text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-black via-black/60 to-[var(--primary)]/40 leading-tight italic ">5000</p>
+                <p className="text-xl font-semibold py-1">/mo</p>
               </div>
               <div className='text-left'>
                 <p className=" text-xl font-semibold mx-auto ">• All features from free</p>
@@ -260,6 +261,7 @@ const AboutPage = () => {
                 <p className='text-xl font-semibold mx-auto '>• Inventory Tracking </p>
                 <p className='text-xl font-semibold mx-auto '>• Order Management </p>
                 <p className='text-xl font-semibold mx-auto '>• Unlimited sales </p>
+                <p className='text-xl font-semibold mx-auto '>• Multiple Categories </p>
                 <button className='my-21 flex bg-gradient-to-br from-[var(--white)]/50 to-[var(--secondary)]/45 text-[var(--text)] mx-15 px-15 py-3 rounded-3xl hover:bg-[var(--accent)] italic font-medium'>Choose plan</button>
               </div>
             </motion.div>

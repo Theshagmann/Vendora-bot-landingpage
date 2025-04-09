@@ -97,63 +97,7 @@ const FAQContactPage = () => {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div 
-            className="bg-white py-2 px-8 rounded-3xl shadow-lg bg-gradient-to-b from-[var(--white)]/10 to-[var(--white)]/5 "
-            initial={{ y: -10, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.75, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Still Have Questions?</h2>
-            <form>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-1">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-1">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  />
-                </div>
-              </div>
-              <div className="mb-4">
-                <label htmlFor="subject" className="block text-gray-700 mb-1">Subject</label>
-                <select 
-                  id="subject" 
-                  className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                >
-                  <option value="">Select a topic</option>
-                  <option value="order">Order Inquiry</option>
-                  <option value="return">Return/Refund</option>
-                  <option value="product">Product Information</option>
-                  <option value="technical">Technical Support</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-gray-700 mb-1">Message</label>
-                <textarea 
-                  id="message" 
-                  rows={4} 
-                  className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                ></textarea>
-              </div>
-              <button 
-                type="submit"
-                className="bg-[var(--primary)]/70 text-white  py-2 my-3 px-4 rounded-2xl hover:[var(--primary)]/20 transition duration-300"
-              >
-                Send Message
-              </button>
-            </form>
-          </motion.div>
+          
         </div>
         
         {/* Lottie Animation */}

@@ -9,7 +9,7 @@ import ScrollingText from "./components/ScrollingText";
 const App = () => {
   return (
     <Router>
-      <div className="bg-transparent min-h-screen">
+      <div className="bg-transparent mx-auto min-h-screen w-full container overflow-hidden">
         <Header />
         <Hero />
         <ScrollingText 

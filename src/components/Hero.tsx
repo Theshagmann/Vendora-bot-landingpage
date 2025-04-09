@@ -4,7 +4,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const Hero = () => {
   return (
     <motion.section 
-      className="relative w-full h-[110vh] flex items-start justify-between font-sans"
+      className="relative w-full h-[100vh] flex items-start justify-between font-sans"
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.75, delay: 0.2 }}
@@ -70,7 +70,7 @@ const Hero = () => {
           Get Started!
         </motion.button>
       </div>
-      <div className="relative mr-45 mt-45 z-10">
+      <div className="relative mr-45 mt-45 z-10 hidden sm:block">
         <DotLottieReact
           src="https://lottie.host/cb52c2cd-547b-41cb-ac52-b5cacd7804e3/V23qv0EPxd.lottie"
           loop
@@ -78,7 +78,7 @@ const Hero = () => {
           style={{ width: '400px', height: '400px' }}
         />
       </div>
-      <div className="absolute ml-56 mt-38 z-10">
+      <div className="absolute ml-56 mt-38 z-10 sm:block hidden">
         <DotLottieReact
           src="https://lottie.host/91c9de1e-faa9-4ba1-a3be-b5e884cd74a5/w9u2eGCol6.lottie"
           loop

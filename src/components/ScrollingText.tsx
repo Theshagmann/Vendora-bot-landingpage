@@ -55,7 +55,9 @@ const ScrollingText = ({
         width: '100%',
         overflow: 'hidden',
         padding: '0px 0',
-        position: 'relative'
+        position: 'relative',
+        marginTop: "80px",
+        marginBottom:"80px"
       }}
     >
       <style>{keyframes}</style>
