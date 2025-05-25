@@ -52,8 +52,8 @@ const FAQContactPage = () => {
     <div className="bg-gradient-to-l min-h-screen" id='faqs'>
       {/* Header */}
       <header className="">
-        <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 text-transparent bg-clip-text bg-gradient-to-b from-black via-black to-[var(--primary)] mb-2  leading-tight italic">FAQs</h1>
+        <div className="container mx-auto px-7 py-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800  bg-clip-text bg-gradient-to-b from-black via-black to-[var(--primary)] mb-2  leading-tight italic">FAQs</h1>
           <p className="text-gray-600 max-w-lg mx-auto text-center font-bold text-lg mb-1">Find answers to your questions</p>
         </div>
       </header>
@@ -107,7 +107,7 @@ const FAQContactPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-full h-full min-h-[800px] rounded-3xl p-4"
+              className="w-full h-full lg:min-h-[800px] mb-10 rounded-3xl p-4"
             >
               <DotLottieReact
                 src="https://lottie.host/2078688b-f5bc-45f4-bc4a-ec120dc0aedf/fqMBHMzEf5.lottie"

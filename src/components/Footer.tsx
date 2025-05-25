@@ -14,98 +14,102 @@ const Footer = () => {
         viewport={{ once: true }}
       >
         {/* Main Footer Content */}
-        <div className="container mx-auto px-2 sm:px-4 py-8 sm:py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        <div className="container mx-auto px-4 sm:px-4 py-6 sm:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8">
             {/* Company Info */}
             <motion.div 
-              className="col-span-1 sm:col-span-2 lg:col-span-1"
+              className="col-span-1 sm:col-span-2 lg:col-span-1 text-center sm:text-left"
               initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.75, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <img src="/api/placeholder/150/50" alt=" Vendora" className="mb-6" />
-              <p className="mb-4">
+              <div className=' flex  gap-2'>
+              <img src="/src/assets/Pictures/tele11.png" alt="Vendora" className="mb-4 sm:mb-6 mx-auto sm:mx-0" />
+              <p>VENDORA</p>
+              </div>
+              <p className="mb-4 text-sm sm:text-base leading-relaxed">
                 We're a team of passionate innovators dedicated to making online selling easy and accessible for everyone.
               </p>
-              <div className="flex space-x-4 mb-6">
-               
-                <a href="#" className="hover:text-white transition-colors duration-300">
-                  <FaTwitter size={20} />
+              <div className="flex justify-center sm:justify-start space-x-4 mb-4 sm:mb-6">
+                <a href="#" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
+                  <FaTwitter size={18} className="sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="hover:text-white transition-colors duration-300">
-                  <FaInstagram size={20} />
+                <a href="https://www.instagram.com/vendora.hq?igsh=ZGUzMzM3NWJiOQ==" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
+                  <FaInstagram size={18} className="sm:w-5 sm:h-5" />
                 </a>
-               
-                <a href="#" className="hover:text-white transition-colors duration-300">
-                  <FaYoutube size={20} />
+                <a href="#" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
+                  <FaYoutube size={18} className="sm:w-5 sm:h-5" />
                 </a>
               </div>
             </motion.div>
             
             {/* Quick Links */}
             <motion.div
+              className="text-center sm:text-left"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
-              <ul className="space-y-2">
+              <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-sm sm:text-base">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors duration-300">About Us</a>
+                  <a href="#about" className="hover:text-white transition-colors duration-300 py-1 block">About Us</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors duration-300">How To</a>
+                  <a href="#how-to" className="hover:text-white transition-colors duration-300 py-1 block">How To</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors duration-300">Pricing</a>
+                  <a href="#pricing" className="hover:text-white transition-colors duration-300 py-1 block">Pricing</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors duration-300">FAQs</a>
+                  <a href="#faqs" className="hover:text-white transition-colors duration-300 py-1 block">FAQs</a>
                 </li>
               </ul>
             </motion.div>
             
             {/* Customer Service */}
             <motion.div
+              className="text-center sm:text-left"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Customer Service</h4>
-              <ul className="space-y-2">
+              <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Customer Service</h4>
+              <ul className="space-y-2 text-sm sm:text-base">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors duration-300">FAQ</a>
-                </li>
-               
-                <li>
-                  <a href="#" className="hover:text-white transition-colors duration-300">Help Center</a>
+                  <a href="https://t.me/vendoraSH" className="hover:text-white transition-colors duration-300 py-1 block">Help Center</a>
                 </li>
               </ul>
             </motion.div>
             
             {/* Contact Info */}
             <motion.div
+              className="text-center sm:text-left"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.75, delay: 0.8 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <FaMapMarkerAlt className="mt-1 mr-3 text-indigo-400" />
-                  <span>S23U46 Inoyo Havens, Ogombo Road, Ajah, Lagos</span>
+              <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Contact Us</h4>
+              <ul className="space-y-3 text-sm sm:text-base">
+                <li className="flex items-start justify-center sm:justify-start">
+                  <FaMapMarkerAlt className="mt-1 mr-3 text-indigo-400 flex-shrink-0" size={14} />
+                  <span className="text-left">S23U46 Inoyo Havens, Ogombo Road, Ajah, Lagos</span>
                 </li>
-                <li className="flex items-center">
-                  <FaPhone className="mr-3 text-indigo-400" />
-                  <span>+234 803 302 9314</span>
+                <li className="flex items-center justify-center sm:justify-start">
+                  <FaPhone className="mr-3 text-indigo-400 flex-shrink-0" size={14} />
+                  <a href="tel:+2348033029314" className="hover:text-white transition-colors duration-300">
+                    +234 912 440 5859
+                  </a>
                 </li>
-                <li className="flex items-center">
-                  <FaEnvelope className="mr-3 text-indigo-400" />
-                  <span>info@yourcompany.com</span>
+                <li className="flex items-center justify-center sm:justify-start">
+                  <FaEnvelope className="mr-3 text-indigo-400 flex-shrink-0" size={14} />
+                  <a href="mailto:info@yourcompany.com" className="hover:text-white transition-colors duration-300">
+                    info@yourcompany.com
+                  </a>
                 </li>
               </ul>
             </motion.div>
@@ -114,15 +118,15 @@ const Footer = () => {
         
         {/* Bottom Footer - Copyright & Legal */}
         <motion.div 
-          className="bg-gray-950 my-2 sm:my-4 py-2 sm:py-4 px-3 sm:px-6 mx-2 sm:mx-3 rounded-2xl sm:rounded-4xl"
+          className="bg-gray-950 my-2 sm:my-4 py-3 sm:py-4 px-4 sm:px-6 mx-2 sm:mx-3 rounded-2xl sm:rounded-4xl"
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.75, delay: 1 }}
           viewport={{ once: true }}
         >
-          <div className="container text-center ">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-4 md:mb-0 text-center mx-auto md:text-center">
+          <div className="container text-center">
+            <div className="flex flex-col md:flex-row justify-center md:justify-between items-center">
+              <div className="mb-0 text-center mx-auto text-sm sm:text-base">
                 <p>&copy; {currentYear} VENDORA. All rights reserved.</p>
               </div>
             </div>
