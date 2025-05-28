@@ -13,7 +13,7 @@ const App = () => {
         <Header />
         <Hero />
         <ScrollingText 
-          text="INSTANT • AUTOMATION • CUSTOMIZABLE • SECURE • EFFICIENCY • INNOVATION   " 
+          text="INSTANT • AUTOMATION • CUSTOMIZABLE • SECURE • EFFICIENCY • INNOVATION • " 
           speed={10}
           textColor="#ffffff"
         />

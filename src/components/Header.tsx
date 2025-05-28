@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+// import { FaBars, FaTimes } from 'react-icons/fa';
+import { TfiClose } from "react-icons/tfi";
+import { CiMenuFries } from "react-icons/ci";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,13 +27,13 @@ const Header = () => {
     <motion.header 
       className={`fixed top-2 left-1/2 -translate-x-1/2 flex justify-between items-center ${
         isScrolled ? 'bg-[var(--background)]/75 text-[var(--text)] shadow-lg backdrop-blur' : 'bg-transparent/75 text-[var(--text)]'
-      } z-50 mt-2 py-3 rounded-4xl max-w-6xl w-full px-4 transition-colors duration-100 italic`}
+      } z-50 mt-2 py-3 px-5 rounded-3xl sm:max-w-6xl max-w-[370px] w-full transition-colors duration-100 italic`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75 }}
     >
       <a href="/">
-        <h1 className="text-xl sm:text-2xl font-bold ml-2 sm:ml-8 text-transparent bg-clip-text bg-gradient-to-b from-black via-black to-[var(--primary)]">
+        <h1 className="text-3xl sm:text-2xl font-bold ml-2 sm:ml-8 text-transparent bg-clip-text bg-gradient-to-b from-black via-black to-[var(--primary)]">
           Vendora
         </h1>
       </a>
@@ -42,7 +44,12 @@ const Header = () => {
           onClick={toggleMobileMenu}
           className="text-[var(--text)] focus:outline-none"
         >
-          {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          {mobileMenuOpen ? 
+          <TfiClose size={20} 
+          className=" text-primary transition-transform transform rotate-180" /> : 
+          <CiMenuFries size={28} 
+          className=" text-primary transition-transform transform rotate-0" 
+          />}
         </button>
       </div>
       
@@ -56,7 +63,7 @@ const Header = () => {
       
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-[var(--background)]/90 backdrop-blur-md mt-2 rounded-xl shadow-lg py-4 px-4 text-center">
+        <div className="lg:hidden absolute top-full left-auto right-0 bg-[var(--background)]/90 backdrop-blur-md mt-2 rounded-xl shadow-lg py-4 px-4 text-center w-1/2">
           <div className="flex flex-col space-y-3">
             <a href="#about" className="hover:text-[var(--white)] py-2" onClick={toggleMobileMenu}>About</a>
             <a href="#how-to" className="hover:text-[var(--white)] py-2" onClick={toggleMobileMenu}>How To</a>
