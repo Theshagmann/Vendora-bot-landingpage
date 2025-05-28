@@ -25,7 +25,7 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className=' flex  gap-2'>
-              <img src="/src/assets/Pictures/tele11.png" alt="Vendora" className="mb-4 sm:mb-6 mx-auto sm:mx-0" />
+              <img src="/src/assets/Pictures/tele11.png" alt="" className="mb-4 sm:mb-6 mx-auto sm:mx-0" />
               <p>VENDORA</p>
               </div>
               <p className="mb-4 text-sm sm:text-base leading-relaxed">
