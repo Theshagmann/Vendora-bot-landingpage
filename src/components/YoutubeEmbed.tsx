@@ -1,15 +1,22 @@
 interface YoutubeEmbedProps {
   embedId: string;
+  title?: string;
 }
 
-const YoutubeEmbed = ({ embedId }: YoutubeEmbedProps) => (
+const YoutubeEmbed = ({
+  embedId,
+  title = "YouTube video player",
+}: YoutubeEmbedProps) => (
   <div className="relative w-full pt-[56.25%]">
     <iframe
-      className="absolute top-0 left-0 right-0 bottom-0 w-full h-full rounded-lg shadow-lg"
+      className="absolute top-0 left-0 w-full h-full"
       src={`https://www.youtube.com/embed/${embedId}`}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      title={title}
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
       allowFullScreen
-      title="Embedded youtube"
+      loading="lazy"
     />
   </div>
 );

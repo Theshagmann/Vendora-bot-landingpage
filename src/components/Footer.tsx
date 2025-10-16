@@ -35,10 +35,10 @@ const Footer = () => {
                 <a href="#" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
                   <FaTwitter size={18} className="sm:w-5 sm:h-5" />
                 </a>
-                <a href="https://www.instagram.com/vendora.hq?igsh=ZGUzMzM3NWJiOQ==" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
+                <a href="https://www.instagram.com/vendorahq?igsh=bjlkN25lemdydGJt" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
                   <FaInstagram size={18} className="sm:w-5 sm:h-5" />
                 </a>
-                <a href="#" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
+                <a href="https://youtube.com/@vendorahq?si=sdFWTlumjh40ApsD" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
                   <FaYoutube size={18} className="sm:w-5 sm:h-5" />
                 </a>
               </div>
@@ -80,7 +80,7 @@ const Footer = () => {
               <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Customer Service</h4>
               <ul className="space-y-2 text-sm sm:text-base">
                 <li>
-                  <a href="https://t.me/vendoraSH" className="hover:text-white transition-colors duration-300 py-1 block">Help Center</a>
+                  <a href="https://t.me/vendorahq" className="hover:text-white transition-colors duration-300 py-1 block">Help Center</a>
                 </li>
               </ul>
             </motion.div>
@@ -101,14 +101,14 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center justify-center sm:justify-start">
                   <FaPhone className="mr-3 text-indigo-400 flex-shrink-0" size={14} />
-                  <a href="tel:+2348033029314" className="hover:text-white transition-colors duration-300">
+                  <a href="tel:+2349124405859" className="hover:text-white transition-colors duration-300">
                     +234 912 440 5859
                   </a>
                 </li>
                 <li className="flex items-center justify-center sm:justify-start">
                   <FaEnvelope className="mr-3 text-indigo-400 flex-shrink-0" size={14} />
-                  <a href="mailto:info@yourcompany.com" className="hover:text-white transition-colors duration-300">
-                    info@yourcompany.com
+                  <a href="mailto:vendorahq@gmail.com" className="hover:text-white transition-colors duration-300">
+                    vendorahq@gmail.com
                   </a>
                 </li>
               </ul>
