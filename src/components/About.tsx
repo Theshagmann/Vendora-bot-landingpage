@@ -319,9 +319,14 @@ const AboutPage = () => {
                   • Limited Categories
                 </p>
               </div>
-              <button className="my-18 flex bg-gradient-to-tl from-[var(--primary)]/50 to-[var(--white)]/45 text-[var(--text)] mx-auto px-13 py-3 rounded-3xl hover:bg-[var(--primary)]/20 italic font-medium">
+              <a
+                href="https://t.me/crreaattor_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="my-18 flex bg-gradient-to-tl from-[var(--primary)]/50 to-[var(--white)]/45 text-[var(--text)] mx-auto px-13 py-3 rounded-3xl hover:bg-[var(--primary)]/20 italic font-medium"
+              >
                 Choose plan
-              </button>
+              </a>
             </motion.div>
             <motion.div
               className="flex flex-col bg-gray-50 shadow-lg rounded-2xl p-6 sm:p-8 hover:shadow-2xl bg-gradient-to-t from-white/50 to-purple-300/20 transition-shadow duration-300"
@@ -367,9 +372,14 @@ const AboutPage = () => {
                 <p className="text-base sm:text-lg font-medium">
                   • Multiple Categories
                 </p>
-                <button className="my-18 flex bg-gradient-to-br from-[var(--white)]/50 to-[var(--secondary)]/45 text-[var(--text)] mx-auto px-13 py-3 rounded-3xl hover:from-white/70 hover:to-purple-300/60 italic font-medium">
+                <a
+                  href="https://t.me/crreaattor_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="my-18 flex bg-gradient-to-br from-[var(--white)]/50 to-[var(--secondary)]/45 text-[var(--text)] mx-auto px-13 py-3 rounded-3xl hover:from-white/70 hover:to-purple-300/60 italic font-medium"
+                >
                   Choose plan
-                </button>
+                </a>
               </div>
             </motion.div>
           </div>
