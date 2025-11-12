@@ -56,14 +56,17 @@ const Hero = () => {
           Vendors can easily setup and manage their online stores with our Telegram Bot.
         </motion.p> */}
         <motion.p
-          className="text-lg font-bold text-[var(--text)] mb-2 text-left leading-tight"
+          className="text-lg font-bold text-[var(--text)] mb-4 text-left leading-tight"
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.75, delay: 1.4 }}
         >
           Join us and Start Earning!
         </motion.p>
-        <motion.button
+        <motion.a
+          href="https://t.me/crreaattor_bot"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-8 font-bold bg-[var(--primary)]/40 text-[var(--text)] px-6 py-3 rounded-3xl hover:bg-[var(--primary)]/40 italic shadow-md"
           whileHover={{ scale: 1.1 }}
           initial={{ y: -20, opacity: 0 }}
@@ -71,7 +74,7 @@ const Hero = () => {
           transition={{ duration: 0.75, delay: 1.6 }}
         >
           Get Started!
-        </motion.button>
+        </motion.a>
       </div>
       <div className="relative mr-45 mt-40 z-10 hidden sm:block">
         <DotLottieReact

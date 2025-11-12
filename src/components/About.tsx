@@ -46,7 +46,10 @@ const AboutPage = () => {
                   orders, and process payments, all from the convenience of your
                   favourite messaging app.
                 </motion.p>
-                <motion.button
+                <motion.a
+                  href="https://t.me/crreaattor_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[var(--secondary)] text-[var(--text)] px-6 py-3 rounded-3xl hover:bg-[var(--accent)] italic font-medium shadow-md"
                   whileHover={{ scale: 1.1 }}
                   initial={{ y: -20, opacity: 0 }}
@@ -55,7 +58,7 @@ const AboutPage = () => {
                   viewport={{ once: true }}
                 >
                   Get Started!
-                </motion.button>
+                </motion.a>
               </div>
               <div className="hidden md:block">
                 <div className="relative">
