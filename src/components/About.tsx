@@ -47,7 +47,7 @@ const AboutPage = () => {
                   favourite messaging app.
                 </motion.p>
                 <motion.a
-                  href="https://t.me/crreaattor_bot"
+                  href="https://t.me/Vendorraa_bot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[var(--secondary)] text-[var(--text)] px-6 py-3 rounded-3xl hover:bg-[var(--accent)] italic font-medium shadow-md"
@@ -320,10 +320,10 @@ const AboutPage = () => {
                 </p>
               </div>
               <a
-                href="https://t.me/crreaattor_bot"
+                href="https://t.me/Vendorraa_bot"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="my-18 flex bg-gradient-to-tl from-[var(--primary)]/50 to-[var(--white)]/45 text-[var(--text)] mx-auto px-13 py-3 rounded-3xl hover:bg-[var(--primary)]/20 italic font-medium"
+                className="mx-auto mt-6 px-6 py-3 rounded-3xl bg-gradient-to-tl from-[var(--primary)]/50 to-[var(--white)]/45 text-[var(--text)] hover:bg-[var(--primary)]/20 italic font-medium"
               >
                 Choose plan
               </a>
@@ -373,10 +373,10 @@ const AboutPage = () => {
                   • Multiple Categories
                 </p>
                 <a
-                  href="https://t.me/crreaattor_bot"
+                  href="https://t.me/Vendorraa_bot"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="my-18 flex bg-gradient-to-br from-[var(--white)]/50 to-[var(--secondary)]/45 text-[var(--text)] mx-auto px-13 py-3 rounded-3xl hover:from-white/70 hover:to-purple-300/60 italic font-medium"
+                  className="block w-fit mx-auto mt-6 px-6 py-3 rounded-3xl bg-gradient-to-br from-[var(--white)]/50 to-[var(--secondary)]/45 text-[var(--text)] hover:from-white/70 hover:to-purple-300/60 italic font-medium"
                 >
                   Choose plan
                 </a>

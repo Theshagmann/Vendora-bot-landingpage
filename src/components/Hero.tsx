@@ -64,7 +64,7 @@ const Hero = () => {
           Join us and Start Earning!
         </motion.p>
         <motion.a
-          href="https://t.me/crreaattor_bot"
+          href="https://t.me/Vendorraa_bot"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8 font-bold bg-[var(--primary)]/40 text-[var(--text)] px-6 py-3 rounded-3xl hover:bg-[var(--primary)]/40 italic shadow-md"

@@ -32,10 +32,10 @@ const Footer = () => {
                 We're a team of passionate innovators dedicated to making online selling easy and accessible for everyone.
               </p>
               <div className="flex justify-center sm:justify-start space-x-4 mb-4 sm:mb-6">
-                <a href="#" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
+                <a href="about" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
                   <FaTwitter size={18} className="sm:w-5 sm:h-5" />
                 </a>
-                <a href="https://www.instagram.com/vendorahq?igsh=bjlkN25lemdydGJt" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
+                <a href="https://www.instagram.com/vendora_ng?igsh=azV0ZjN2Y3NlaHNw" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
                   <FaInstagram size={18} className="sm:w-5 sm:h-5" />
                 </a>
                 <a href="https://youtube.com/@vendorahq?si=sdFWTlumjh40ApsD" className="hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-full">
